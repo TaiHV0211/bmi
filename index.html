@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Navbar</a>
+          <a class="navbar-brand" href="/index.html">Tính chỉ số BMI</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,7 +25,8 @@
           </div>
         </div>
       </nav>
-      <div class="container">
+      <div class="input--bmi">
+        <div class="container">
           <h1>CHỈ SỐ BMI</h1>
           <form>
             <div class="mb-3">
@@ -40,18 +41,21 @@
             <button type="button" class="btn btn-danger m-lg-2" onclick="Delete()">Xóa</button>
         </form>
       </div>
-      <div class="container mt-3">
-        <h4>Kết quả</h4>
-          <div class="mb-3">
-            <label for="bmi" class="form-label">Chỉ số BMI</label>
-            <input type="text" class="form-control" id="bmi" readonly>
+      </div>
+      <div class="output--bmi">
+          <div class="container mt-3">
+            <h4>Kết quả</h4>
+              <div class="mb-3">
+                <label for="bmi" class="form-label">Chỉ số BMI</label>
+                <input type="text" class="form-control" id="bmi" readonly>
+              </div>
+              <!-- <span  id="bmi"></span> -->
+              <div class="mb-3">
+                <label for="tinhtrang" class="form-label">Tình trạng</label>
+                <input type="text" class="form-control" id="tinhtrang" readonly>
+              </div>
           </div>
-          <!-- <span  id="bmi"></span> -->
-          <div class="mb-3">
-            <label for="tinhtrang" class="form-label">Tình trạng</label>
-            <input type="text" class="form-control" id="tinhtrang" readonly>
-          </div>
-    </div>
+      </div>
 
     <script>
         function BMI(){
